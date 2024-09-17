@@ -764,7 +764,7 @@ section {
   }
   
   .btn svg {
-      height: 18px; /* Ajusta el tamaño del ícono SVG */
+      height: 19px; /* Ajusta el tamaño del ícono SVG */
   }
 }
 
@@ -804,7 +804,7 @@ section {
   color: white;
   border-radius: 10px;
   border:#18d26e;
-  padding: 60px;  
+  padding: 60px 10px;  
   
 }
 
@@ -813,7 +813,7 @@ section {
   color: #ffffff;
   border-radius: 10px;
   border:#18d26e;
-  padding: 60px;
+  padding: 60px 20px;
   
 }
 
@@ -822,8 +822,7 @@ section {
   color: #ffffff;
   border-radius: 10px;
   border:#18d26e;
-  padding: 60px;
-
+  padding: 15px 20px;
   
 }
 
