@@ -533,6 +533,7 @@ section {
   padding-bottom: 20px;
   position: relative;
   color: #29F35A;
+  margin-top: 5rem;
 }
 /*
 .section-title h2::after {
@@ -854,6 +855,9 @@ section {
 
 #experiencia{
   margin-top: 2rem;
+  padding-left: 2rem;
+  padding: 0px 5px 15px;
+
 }
 
 #experiencia h5{
