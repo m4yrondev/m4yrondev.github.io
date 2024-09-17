@@ -718,31 +718,6 @@ section {
   border-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 768px) {
-  .btn {
-      padding: 8px 16px;
-      font-size: 14px;
-  }
-  
-  .btn svg {
-      height: 20px;
-      width: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  .btn {
-      padding: 6px 12px;
-      font-size: 12px;
-  }
-  
-  .btn svg {
-      height: 18px;
-      width: auto;
-  }
-}
-
-
 #Card_Halloween{
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -750,13 +725,59 @@ section {
   color: rgb(255, 255, 255);
   text-align: center;
   font-weight: 600;
-  letter-spacing: 1px;
 }
 
 .Card_Halloween a{
   margin-left: 18px;
   margin-right: 18px;
   border-color: rgb(255, 255, 255);
+}
+
+/* Mantén el tamaño original para pantallas grandes */
+.btn svg {
+  height: 24px; /* Mantén el tamaño original del SVG para pantallas grandes */
+  width: auto; 
+  margin-left: 1px;
+}
+
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 768px) {
+  .btn {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+  
+  .btn svg {
+      height: 20px;
+  }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  .btn {
+      padding: 10px 20px;
+      font-size: 15px;
+  }
+  
+  .btn svg {
+      height: 20px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 320px) {
+  .btn {
+      padding: 6px 10px; /* Ajusta el padding para que los botones no se vean tan grandes */
+      font-size: 12px;
+      display: inline-flex; /* Asegura que el botón se mantenga en línea */
+      width: auto; /* Asegura que el botón no ocupe todo el ancho */
+      text-align: center; /* Centra el texto y el ícono dentro del botón */
+  }
+  
+  .btn svg {
+      height: 17px; /* Ajusta el tamaño del SVG para pantallas muy pequeñas */
+  }
 }
 
 /*--------------------------------------------------------------
