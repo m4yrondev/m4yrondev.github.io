@@ -753,17 +753,21 @@ section {
   }
 }
 
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 576px) {
+/* Ajuste para pantallas de entre 360px y 400px */
+@media (min-width: 360px) and (max-width: 400px) {
   .btn {
-      padding: 10px 20px;
-      font-size: 15px;
+      padding: 8px 16px; /* Ajusta el padding para pantallas medianas */
+      font-size: 13px; /* Ajusta el tamaño del texto */
+      width: auto; /* Ajusta el ancho automáticamente */
+      max-width: 100%; /* Limita el ancho del botón para que no se expanda demasiado */
+      text-align: center; /* Centra el texto y el ícono dentro del botón */
   }
   
   .btn svg {
-      height: 20px;
+      height: 18px; /* Ajusta el tamaño del ícono SVG */
   }
 }
+
 
 /* Ajustes para pantallas muy pequeñas */
 @media (max-width: 320px) {
