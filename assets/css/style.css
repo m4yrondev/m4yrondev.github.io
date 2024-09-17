@@ -1,11 +1,3 @@
-/**
-* Template Name: Baker
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -324,131 +316,198 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+/* Estilos generales para la sección hero */
 #hero {
-  width: 100%;
-  height: 80vh;
-/*  background: -webkit-linear-gradient(171deg, #0f042f,#040113,#000000);
-  background: linear-gradient(171deg, #0f042f,#040113,#000000);*/
-  background-size: cover;
-  position: relative;
-}
-
-#hero:before {
-  content: "";
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  background: url('ruta/a/tu/imagen-de-fondo.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+  margin-top: 8rem;
 }
 
 #hero .container {
-  text-align: center;
-  padding-top: 50px;
-}
-
-@media (max-width: 992px) {
-  #hero .container {
-    padding-top: 0;
-  }
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 #hero h1 {
-  margin: 0;
-  font-size: 1px;
-  font-weight: 600;
-  line-height: 36px;
-  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-#hero h2 {
-  color: #eee;
-  margin: 15px 0 0 0;
-  font-size: 22px;
+#hero .boton-disponible {
+  display: inline-block;
+  padding: 1px 10px;
+  border: 2px solid;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: default;
+  
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
   display: inline-block;
-  padding: 9px 35px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin-top: 40px;
+  padding: 10px 20px;
   border: 2px solid #29F35A;
   color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #hero .btn-get-started:hover {
-/*  background: #ffc107;*/
-  background: rgba(41, 243, 90, 0.7);
+  background-color: #1ca83f;
+  color: white;
 }
 
-@media (min-width: 1024px) {
+#hero .redes-sociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 60px;
+}
+
+#hero .redes-sociales a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  gap: 8px;
+}
+
+#hero .icon {
+  fill: none;
+  stroke: #00abfb;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
   #hero {
-    background-attachment: fixed;
+    padding: 40px 0;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  #hero .boton-disponible,
+  #hero .btn-get-started {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 768px) {
-  #hero {
-    height: 100vh;
-  }
-}
-
   #hero h1 {
-    font-size: 58px;
-    line-height: 60px;
-    margin-top: -1rem;
-  }
-
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #hero h4 {
-    font-size: 14px;
-    font-weight: 200;
-    margin-top: 20px;
-    color: white;
+    font-size: 1.6rem;
   }
 
   #hero p {
-    font-size: 20px;
-    font-weight: 600px;
-    color: white;
-    margin-top: -20px;
-    display: inline-block;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    
+    font-size: 0.9rem;
+  }
+  
+  #hero .redes-sociales {
+    flex-direction: column;
+  }
+  
+  #hero .redes-sociales a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    padding: 20px 0;
+  }
+  
+  #hero h1 {
+    font-size: 1.4rem;
   }
 
-.Boton_disponible{
-  background: white;
-  font-size: 13px;
-  font-weight: 550;
-  border-radius: 3px;
-  color: rgb(22,21,35);
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 27.6rem;
-  cursor: default;
+  #hero p {
+    font-size: 0.8rem;
+  }
+  
+  #hero .boton-disponible,
+  #hero .btn-get-started {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
 }
 
-.redes_sociales{
-  margin-top: 6rem;
-  margin-left: 0px;
-
+/* Estilos generales para el párrafo */
+.responsive-paragraph {
+  font-size: 1.6rem; /* Tamaño de fuente base relativo */
+  line-height: 1.5;
+  margin: 0 auto;
+  text-align: center; /* Alinea el texto al centro */
+  padding: 0 1rem; /* Añade padding relativo */
+  max-width: 100%; /* Asegura que el párrafo no exceda el ancho del contenedor */
 }
 
-.redes_sociales a{
-  color: white;
-  margin: 10px;
+/* Resalta el texto */
+.highlight {
+  color: #29F35A;
+  font-weight: bold;
 }
+
+/* Subraya el texto */
+.underline {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .responsive-paragraph {
+    font-size: 1.4rem; /* Tamaño de fuente para pantallas medianas */
+  }
+}
+
+@media (max-width: 992px) {
+  .responsive-paragraph {
+    font-size: 1.2rem; /* Tamaño de fuente para pantallas grandes */
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-paragraph {
+    font-size: 1rem; /* Tamaño de fuente para pantallas más pequeñas */
+    text-align: center; /* Alineación centrada */
+    padding: 0 0.5rem; /* Ajusta el padding para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .responsive-paragraph {
+    font-size: 0.9rem; /* Tamaño de fuente para pantallas muy pequeñas */
+    padding: 0 0.5rem; /* Ajusta el padding para pantallas pequeñas */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -592,6 +651,9 @@ section {
 /*--------------------------------------------------------------
 # Proyectos
 --------------------------------------------------------------*/
+.proyectos{
+  margin: 1.2rem;
+}
 
 .proyectos h3 {
   font-weight: 700;
@@ -651,8 +713,8 @@ section {
 }
 
 .Card_Dinoco a{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
   border-color: rgb(255, 255, 255);
 }
 
@@ -667,8 +729,8 @@ section {
 }
 
 .Card_Halloween a{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 18px;
+  margin-right: 18px;
   border-color: rgb(255, 255, 255);
 }
 
@@ -711,6 +773,7 @@ section {
   border-radius: 10px;
   border:#18d26e;
   padding: 60px;
+
   
 }
 
